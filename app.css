@@ -1,0 +1,184 @@
+[current-theme = 'theme1']{
+    --text:white; 
+    --bg:hsl(222, 26%, 31%);
+    --btn-bg:hsl(223, 31%, 20%);
+    --btn-bor:hsl(223, 31%, 20%);
+    --chcecked:hsl(6, 63%, 50%);
+    --screen-bg:hsl(224, 36%, 15%);
+    --key-bg:hsl(223, 31%, 20%);
+    --keybtn1-bg:hsl(30, 25%, 89%);
+    --keybtn1-shd:hsl(28, 16%, 65%);
+    --key-clr:hsl(223, 31%, 20%);
+    --keybtn2-bg:hsl(6, 63%, 50%);
+    --keybtn2-shd:hsl(6, 70%, 34%);
+    --keybtn3-bg:hsl(225, 21%, 49%);
+    --keybtn3-shd:hsl(224, 28%, 35%); 
+}
+
+[current-theme = 'theme2']{
+    --text:hsl(60, 10%, 19%); 
+    --bg:hsl(0, 0%, 90%);
+    --btn-bg:hsl(0, 5%, 81%);
+    --btn-bor:hsl(0, 5%, 81%);
+    --chcecked:hsl(25, 98%, 40%);
+    --screen-bg:hsl(0, 0%, 93%);
+    --key-bg:hsl(0, 5%, 81%);
+    --keybtn1-bg:hsl(45, 7%, 89%);
+    --keybtn1-shd:hsl(35, 11%, 61%);
+    --key-clr:hsl(60, 10%, 19%);
+    --keybtn2-bg:hsl(25, 98%, 40%);
+    --keybtn2-shd:hsl(25, 99%, 27%);
+    --keybtn3-bg:hsl(185, 42%, 37%);
+    --keybtn3-shd:hsl(185, 58%, 25%); 
+}
+
+[current-theme = 'theme3']{
+    --text:hsl(52, 100%, 62%); 
+    --bg:hsl(268, 75%, 9%);
+    --btn-bg:hsl(268, 71%, 12%);
+    --btn-bor:hsl(268, 71%, 12%);
+    --chcecked:hsl(176, 100%, 44%);
+    --screen-bg:hsl(268, 71%, 12%);
+    --key-bg:hsl(268, 71%, 12%);
+    --keybtn1-bg:hsl(268, 47%, 21%);
+    --keybtn1-shd:hsl(290, 70%, 36%);
+    --key-clr:hsl(52, 100%, 62%);
+    --keybtn2-bg:hsl(176, 100%, 44%);
+    --keybtn2-shd:hsl(177, 92%, 70%);
+    --keybtn3-bg:hsl(281, 89%, 26%);
+    --keybtn3-shd:hsl(285, 91%, 52%); 
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 100px;
+    padding: 20px;
+    border-radius: 25%;
+}
+
+.flex-item1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+h5{
+    padding: 0px 20px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.chcek-button {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--btn-bg);
+    margin: 20px 0px;
+    border: 3px solid var(--btn-bor);
+    border-radius: 25px;
+    user-select: none;
+}
+
+/* The container */
+.container {
+    position: relative;
+    padding-left: 16px;
+    cursor: pointer;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+/* When the radio button is checked, add background */
+.container input:checked~.checkmark {
+    background-color: var(--chcecked);
+}
+
+.checkmark p {
+    position: absolute;
+    top: -220%;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.flex-item2 {
+    display: flex;
+    background-color: var(--screen-bg);
+    justify-content: flex-end;
+    margin: 35px 0px;
+    border-radius: 13px;
+}
+
+h1{
+    padding: 0px 35px;
+    font-size: 32px;
+}
+
+.flex-item3 {
+    display: flex;
+    background-color: var(--key-bg);
+    border-radius: 13px;
+    justify-content: center;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin: 40px;
+    row-gap: 40px;
+    column-gap: 40px;
+    justify-content: center;
+}
+
+.grid-item{
+    border: none;
+    border-radius: 13px;
+    background-color: var(--keybtn1-bg);
+    box-shadow: 0 0 20px var(--keybtn1-shd) inset;
+    color: var(--key-clr);
+    font-size: 26px;
+    text-align: center;
+    padding: 10px;
+}
+
+.last1{
+    grid-column: 1 / span 2;
+}
+
+.last2 {
+    grid-column: 3 / span 2;
+    background-color: var(--keybtn2-bg);
+    color: white;
+    box-shadow: 0 0 20px var(--keybtn2-shd) inset;
+}
+
+.difbtn{
+    background-color: var(--keybtn3-bg);
+    color: white;
+    box-shadow: 0 0 20px var(--keybtn3-shd) inset;
+}

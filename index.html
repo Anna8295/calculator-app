@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" current-theme = 'theme1'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+    <title>Calculator - App</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <section class="flex-container">
+        <div class="flex-item1">
+            <div>
+                <h2>calc</h2>
+            </div>
+            <div class="flex-item1">
+                <div>
+                    <h5>Theme</h5>
+                </div>
+                <div class="chcek-button">
+                    <label class="container">
+                        <input type="radio"  checked="checked" name="radio">
+                        <span class="checkmark"><p>1</p></span>
+                    </label>
+                    <label class="container">
+                        <input type="radio" name="radio" id="theme2">
+                        <span class="checkmark" id="theme2"><p>2</p></span>
+                    </label>
+                    <label class="container">
+                        <input type="radio" name="radio" id="theme3">
+                        <span class="checkmark" id="theme3"><p>3</p></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-item2">
+            <div>
+                <h1 class="screen"></h1>
+            </div>
+        </div>
+
+        <div class="flex-item3">
+            <div class="grid-container">
+                <button class="grid-item">7</button>
+                <button class="grid-item">8</button>
+                <button class="grid-item">9</button>
+                <button class="grid-item difbtn">DEL</button>
+                <button class="grid-item">4</button>
+                <button class="grid-item">5</button>
+                <button class="grid-item">6</button>
+                <button class="grid-item">+</button>
+                <button class="grid-item">1</button>
+                <button class="grid-item">2</button>
+                <button class="grid-item">3</button>
+                <button class="grid-item">-</button>
+                <button class="grid-item">.</button>
+                <button class="grid-item">0</button>
+                <button class="grid-item">/</button>
+                <button class="grid-item">*</button>
+                <button id="reset" class="grid-item last1 difbtn">RESET</button>
+                <button id="equals" class="grid-item last2">=</button>
+            </div>
+        </div>
+    </section>
+    <script src="theme.js"></script>
+    <script src="calculator.js"></script>
+</body>
+
+</html>

@@ -16,11 +16,6 @@ https://anna8295.github.io/calculator-app/
 **Server:** JavaScript
 
 
-## Features
-
-- optimal layout for the app depending on their device's screen size
-
-
 ## Lessons Learned
 
 I tested my CSS and JavaScript skills. I practised using the Grid system and I created an easy function-to-use calculator. 
